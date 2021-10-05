@@ -63,23 +63,24 @@ Transformers Enhanced Aptamers (*TEA*) software is extension of the EFBALite tha
 Initially N random aptamer sequences are generated employing EFBAScore, following it up, data must be specifically preprocessed to contain a pair of aptamers with a binary label that determines if the first sequence is more fit (1) or not (0). 
 
 <p align="center">
-  <img src="images/dataframe.png" alt="Logo" width="75%" height="70%">
+  <img src="images/dataframe.png" alt="Logo" width="60%" height="60%">
 </p>
 
 Paired sequences dataset is obtained by comparing every aptamer in-between by fitness score which is computed with the former software, later number of classification classes labels are balanced (if needed) by flipping Label together with exhanging first aptamer with the second in places for model to master both classes equally good. 
 
 <p align="center">
-  <img src="images/dataframe_before_switch.png" alt="Logo" width="75%" height="70%">
+  <img src="images/dataframe_before_switch.png" alt="Logo" width="60%" height="60%">
 </p>
 <p align="center">
-  <img src="images/dataframe_after_switch.png" alt="Logo" width="75%" height="70%">
+  <img src="images/dataframe_after_switch.png" alt="Logo" width="60%" height="60%">
 </p>
 
 Next, paired aptamers are put to the GA that produces new sequences from the the most fit by by well-known breeding, mutation steps, shortly speaking, GA conditions new breed to have properties of the "best". New list of aptamers are evaluated by TEA, 10 % of the best stays and we iteratively repeat the process until it converges and we are satisfied with probabilities of model to have at least few super fit sequences to target protein of interest. Final aptamers can be send to wet lab to confirm its superiority after the last EFBALite run on it. *Every result can be reproduced using seed*.
 
 ##  Modeling 
 
-- [ ]  Trumpas aprasas is GA readme su keleta paveiksleliu ir pagrindiniu isvadu
+Whole NN with GA have been modeled with Bayesian inference methods to determine can process converge and if so how long it would take; also stability of iterative algortihm have been taken in consideration to determine what exact accuracy level of Albert we have to train to ensure fitness of process. Read more in ./genetic_algorithm/.
+
 ## Results
 
 Fine-tuning two models with various hyperparameter to try took up <12 hours which is enough for a model to learn positional embeddings difference between Natural Language and language of proteins. Dataset for the learing part consisted of 1500 different aptamer sequences from EFBAScore which were later on paired to form 433050 pairs with binary labels, 70% of it was used for training matter, 15 % for validation, and the rest for testing. 
@@ -96,10 +97,6 @@ Comparing the accuracy and other significant metrics of fine-tuned `albert-base-
 </p>
 
 Albert employed in our GA iterative process is capable of evaluating 800 aptamers per iteration which takes from 7 to 8 minutes.
-
-###  Optimized version
-
-- [ ] Prideti pagrindinius punktus is model README su efektyvumu ir kas padaryta
 
 <!-- GETTING STARTED -->
 ## Getting Started
