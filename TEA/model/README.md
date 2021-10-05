@@ -56,11 +56,6 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About BERT
-TODO
-- [ ] JEI BUS LAIKO PAEKSPERMENTUOTI SU PRECISION IR SUTVARKYTI APPENDIX
-- [ ] PAKEISTI LENTELES SU GERU CSS FORMATU
-- [ ] SUDELIOTI ITALICIR BOLD SRIFTUS
-- [ ] 
  
 2018 was a breakthrough year for NLP, multiple new models like OpenAI's Open-GTP, Google's BERT allowed researchers to fine-tune existing models to produce state-of-art performance with minimal effort. LSTM have became largely replaced by BERT (Bidirectional Encoder Representations from Transformers) which was released in late 2018, because of transformers property of transfer learning which scales even further with open-source new model deployed, for instance in [*HuggingFace*](https://huggingface.co). Generally, using a pre-trained network can be used if datasets have something in common, so instead of training the neural network from scracth, which can take up to week to train and big bill of expensive GPU, we "transfer" the learned features. Simply put, you use it as a starting point. To consider, Natural Language Processing (NLP) models for sequence classification archieve ~ 85% accuracy, therefore proteins "language" is quite the same as languages we speak so we expect decent results.
 
@@ -100,7 +95,7 @@ Model input must follow standard norms - **(Sequence1, Sequence2, Label)**. In c
   ```
 * Output format
 <p align="center">
-    <img src="./../images/dataframe.png" alt="dataframe" width="360" height="160">
+    <img src="./../images/dataframe.png" alt="dataframe" width="60%" height="60%">
 </a>
 
 
@@ -137,7 +132,7 @@ Required formating:
 `[PAD]` - Is used to balance every input sequence lenghts.
 
 <p align="center">
-    <img src="./../images/bert.png" alt="Logo" width="70%" height="70%">
+    <img src="./../images/bert.png" alt="Logo" width="60%" height="60%">
   </a>
 
 * How it looks in our case
