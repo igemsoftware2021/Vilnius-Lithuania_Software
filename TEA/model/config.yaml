@@ -1,0 +1,31 @@
+#  Fine-tuning data directory
+Datasets:
+  train: ./datasets/training/train.csv
+  val: ./datasets/training/val.csv
+  test: ./datasets/training/test.csv
+
+Model:
+  #  bert_model and hidden_state have to match, more info in
+  #  https://huggingface.co/transformers/pretrained_models.html
+  bert_model: albert-base-v2
+  hidden_size: 768
+  with_labels: true
+  batch_size: 64
+  max_len: 32
+  freeze_bert: false
+  dropout_rate: 0.1
+  iters_to_accumulate: 2
+  learning_rate: 5e-5
+  epochs: 55
+  num_warmup_steps: 10000
+#  In case of multiclass classification model change label number parameter
+  number_labels: 1
+  convert_to_onnx: true
+  model_name: Albumin
+
+Path:
+  print_every: 1
+  path_to_model: model/albert-base-v2_5e-05_0.1075.pt
+  path_to_model_evaluation: ./datasets/model_validation/albert-base-v2_5e-05_0.1075.csv
+  path_to_model_test: ./datasets/model_validation/pred-albert-base-v2_5e-05_0.1075.csv
+
