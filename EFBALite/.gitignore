@@ -1,0 +1,4 @@
+leap.log
+__pycache__/
+*.inpcrd
+*.prmtop
