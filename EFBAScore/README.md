@@ -1,16 +1,10 @@
-# EFBALite
+# EFBAScore
 
 # Intro:
 
-This is an implementation and modification of the Entropic Fragment-Based Approach to Aptamer Design that runs on a personal PC instead of a supercomputer.
+This is an implementation of the scoring function for aptamers based the article "Entropic Fragment-Based Approach to Aptamer Design".
 
 This software was written as part of the 2021 iGEM team's Vilnius-Lithuania project. Please check out our [wiki](https://2021.igem.org/Team:Vilnius-Lithuania) for more information.
-
-List of changes made to the algorithm outlined in the article:
-
-1. We do less molecular dynamics simulations. This significantly improves calculation time at the cost of some accuracy.
-2. Better spatial sampling. We sample on the surface of the target molecule instead of on the surface of a bounding rectangle.
-3. We implemented a depth-first searching algorithm to increase the quality of the generated aptamer.
 
 # Requirments:
 The program was written to run and tested on a linux machine (Manjaro).
@@ -43,19 +37,21 @@ Additionally the program uses the following python packages:
 3. Pexpect - due to this dependency the program will not work on Windows, if you want it to run on Windows you need to edit the functions in functions/generateAmberFiles.py to use the Pexpect api for Windows.
 
 # Usage:
+The program uses a .fasta file as input to specify which sequences to score (example input file provided in the repository).
+
 In general to run the program run:
 
-`python EFBALite.py target.pdb`.
+`python EFBAScore.py input.fasta target.pdb output.fasta`.
 
 Call: 
 
-`python EFBALite.py -h`
+`python EFBAScore.py -h`
 
 for the help screen to see all optional parameters.
 
 You can benchmark the program on your system by running it with the sample .pdb file provided by running: 
 
-`python EFBALite.py example.pdb -l 16 -o output.pdb`
+`python EFBAScore.py genes.fasta example.pdb output.fasta`
 
 On our system this command took 2018 s. (~30 min.) to run.
 
