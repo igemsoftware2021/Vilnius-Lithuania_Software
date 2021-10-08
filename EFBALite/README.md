@@ -8,14 +8,14 @@ This software was written as part of the 2021 iGEM team's Vilnius-Lithuania proj
 
 List of changes made to the algorithm outlined in the article:
 
-1. We do less molecular dynamics simulations. This significantly improves calculation time at the cost of some accuracy.
+1. We do less molecular dynamics simulations. This approach significantly improves calculation time at the cost of some accuracy.
 2. Better spatial sampling. We sample on the surface of the target molecule instead of on the surface of a bounding rectangle.
 3. We implemented a depth-first searching algorithm to increase the quality of the generated aptamer.
 
-# Requirments:
-The program was written to run and tested on a linux machine (Manjaro).
+# Requirements:
+The program was written to run and tested on a Linux machine (Manjaro).
 
-The machine should have a GPU installed, otherwise the program will run increadibly slowly, the program was tested on a machine with the followig specs:
+The machine should have a GPU installed, otherwise the program will run incredibly slowly, the program was tested on a machine with the followig specs:
 
 GPU - NVIDIA® GeForce® GTX 1650; 4GB
 
@@ -23,7 +23,7 @@ CPU - AMD Ryzen 5 4600H
 
 RAM - 8GB
 
-# Instalation:
+# Installation:
 The program uses OpenMM to compute potential energies of the complex and AmberTools to prepare .pdb files for molecular dynamics calculations.
 
 Both of these programs need to be installed, this can be done using Anaconda. We recommend using [miniconda](https://docs.conda.io/en/latest/miniconda.html) as it is less bloat.
