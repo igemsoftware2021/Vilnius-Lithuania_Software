@@ -1,0 +1,4 @@
+PDB/AF2_MD/GSG.pdb
+Minimum distance: 37.99335479736328
+Maximum distance: 45.26822280883789
+Average distance: 41.414512823123744

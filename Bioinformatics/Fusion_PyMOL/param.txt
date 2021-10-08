@@ -1,0 +1,18 @@
+fusion: PDB/GSG_after_md.pdb
+
+protein_1: PDB/templates/N_term.pdb
+length_1: 562
+active_sites_1: 251+278+279 163+461
+
+protein_2: PDB/templates/C_term.pdb
+length_2: 395
+active_sites_2: 309+342+347
+
+linker: GSG
+linker_repeats: 1
+
+colors: 0x002733 0x054d54 0x1b8489 0xef9f8d 0xfccec0 0x00fbff
+
+output_distance_file: ./tmp/distances.txt
+
+
