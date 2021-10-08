@@ -20,8 +20,6 @@
   </ol>
 </details>
 
-Suggestion for future improvements
-
 <!-- ABOUT THE PROJECT -->
 ## Motivation
 
