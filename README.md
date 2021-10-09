@@ -15,7 +15,7 @@
 
 
 <p align="center">
-  <img src="TEA/images/logo.png" alt="Logo" width="30%" height="30%">
+  <img src="TEA/images/logo_no_background.png" alt="Logo" width="30%" height="30%">
 
   <p align="center">
     An jumpstart to fit aptamers!
