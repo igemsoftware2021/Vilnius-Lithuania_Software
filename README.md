@@ -9,7 +9,7 @@
   <a href="https://github.com/iGEM-Vilnius/Software/network/members" ><img src="https://img.shields.io/github/forks/iGEM-Vilnius/Software.svg?style=for-the-badge"></a>
   <a href="https://github.com/iGEM-Vilnius/Software/stargazers" ><img src="https://img.shields.io/github/stars/iGEM-Vilnius/Software.svg?style=for-the-badge"></a>
   <a href="https://github.com/iGEM-Vilnius/Software/issues" ><img src="https://img.shields.io/github/issues/iGEM-Vilnius/Software.svg?style=for-the-badge"></a>
-  <a href="https://github.com/iGEM-Vilnius/Software/TEA/LICENSE.txt" ><img src="https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge"></a>
+  <a href="https://github.com/iGEM-Vilnius/Software/blob/main/TEA/LICENSE.txt" ><img src="https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge"></a>
 </p>
 
 
