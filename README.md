@@ -18,7 +18,7 @@
   <img src="TEA/images/logo_no_background.png" alt="Logo" width="30%" height="30%">
 
   <p align="center">
-    An jumpstart to fit aptamers!
+    Make <i>E. histolytica</i> history
     <br />
     <a href="https://2021.igem.org/Team:Vilnius-Lithuania"><strong>Explore Our Wiki »</strong></a>
     <br />
