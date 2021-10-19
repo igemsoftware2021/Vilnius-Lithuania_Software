@@ -46,11 +46,9 @@ Call:
 
 for the help screen.
 
-You can benchmark the program on your system by running it with the sample .pdb file provided by running: 
+You can benchmark the program on your system by running it with the sample .pdb and .fasta files provided by running: 
 
-`python EFBAScore.py GAGTTTAGGGGTCTT example.pdb -o output.pdb`
-
-On our system this command took 514 s. (~10 min.) to run.
+`python EFBAScore.py genes.fasta example.pdb -o output.pdb`
 
 # Troubleshooting:
 The program will not work on Windows! If you want it to run on Windows, you need to edit the functions in `functions/generateAmberFiles.py` to use the Pexpect API for Windows.
